@@ -1,0 +1,18 @@
+.success{
+    background-color: greenyellow;
+    padding: 15px;
+    border-radius: 10px;
+    color:'black';
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+    .close-button{
+        color:green;
+        font-weight: bold;
+    }
+
+    .close-button:hover{
+        cursor: pointer;
+    }
+}
