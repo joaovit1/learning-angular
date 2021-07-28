@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsernameComponent implements OnInit {
 
   username=""
+  usersList = ['User1','User2']
 
   constructor() { }
 
@@ -16,6 +17,15 @@ export class UsernameComponent implements OnInit {
 
   resetUsername = () =>{
     this.username=""
+  }
+
+  getColor = () =>{
+    return this.username !==''? 'green' : 'red'
+  }
+
+  addUsername = () =>{
+	  this.usersList.push(this.username)
+	  console.log(this.usersList)
   }
 
 }
