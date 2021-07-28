@@ -3,29 +3,7 @@
 		<div class="col-xs-12">
 			<h3>{{title}}</h3>
 			<hr>
-			<app-server></app-server>
-			<button class="btn btn-primary" [disabled]="buttonDisable" (click)="onButtonChangeTitle()">Add server</button>
-			<br>
-			<br>
-			<p>
-				Este somente altera o que está escrito
-			</p>
-			<input 
-				type="text" 
-				class="form-control"
-				(input)="onInputUpdateAppName($event)"
-			>
-			<br>
-			<p>
-				Este acompanha o que está escrito
-			</p>
-			<input 
-				type="text" 
-				class="form-control"
-				[(ngModel)]="appName"
-			>
-			<app-success-alert></app-success-alert>
-			<app-warning-alert></app-warning-alert>
+			<app-username></app-username>
 		</div>
 	</div>
 </div>
